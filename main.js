@@ -9,9 +9,9 @@ $(function () {
 
 
 
-  
+
   console.log(SZAMLISTA);
-  rendezes1(SZAMLISTA);
+  keveres2(SZAMLISTA);
   console.log(SZAMLISTA);
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
@@ -42,5 +42,8 @@ function rendezes1(lista) {
   lista.sort();
 }
 function rendezes2(lista){
-
+    lista.sort(function(a, b){return a - b});/**szamoknal mukodik */
+}
+function keveres2(lista){
+    lista.sort(function(a,b){return 0.5 - Math.random()})
 }
