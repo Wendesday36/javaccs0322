@@ -1,7 +1,11 @@
 import { SZAMLISTA } from "./adat.js";
 console.log(SZAMLISTA);
 $(function () {
-  keveres1(SZAMLISTA);
+  let kevertIndexLista = keveres1(SZAMLISTA);
+  console.log(kevertIndexLista);
+  for (let index = 0; index < SZAMLISTA.length; index++) {
+    console.log(SZAMLISTA[kevertIndexLista[index]])
+  }
 });
 function keveres1(lista) {
   let van;
@@ -18,6 +22,6 @@ function keveres1(lista) {
       megKeverIndex.push(szamok);
     }
   }
-  console.log(megKeverIndex);
+
   return megKeverIndex;
 }
