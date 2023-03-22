@@ -6,6 +6,13 @@ $(function () {
   console.log(SZOVEGLISTA);
   rendezes1(SZOVEGLISTA);
   console.log(SZOVEGLISTA);
+
+
+
+  
+  console.log(SZAMLISTA);
+  rendezes1(SZAMLISTA);
+  console.log(SZAMLISTA);
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
     console.log(SZAMLISTA[kevertIndexLista[index]])
@@ -30,5 +37,10 @@ function keveres1(lista) {
   return megKeverIndex;
 }
 function rendezes1(lista) {
+    /**ez szovegek eseten mukodik
+     */
   lista.sort();
+}
+function rendezes2(lista){
+
 }
