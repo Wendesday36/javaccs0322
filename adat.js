@@ -1,2 +1,2 @@
-export const SZAMLISTA= [11,12,13,14,15];
+export const SZAMLISTA= [23,5,55,11,121];
 export const SZOVEGLISTA = ["beka","alma","hangya","póni","könyv"]
