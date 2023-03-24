@@ -13,12 +13,19 @@ $(function () {
   /*console.log(SZAMLISTA);
   keveres2(SZAMLISTA);
   console.log(SZAMLISTA);*/
+  console.log(OBJEKTUMLIST);
+  rendezesKorSzerint(OBJEKTUMLIST);
   console.log(OBJEKTUMLIST)
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
     console.log(SZAMLISTA[kevertIndexLista[index]])
   } */
 });
+function rendezesKorSzerint(lista){
+  lista.sort(function(a, b){
+    return a - b
+  })
+}
 function keveres1(lista) {
   let van;
   let megKeverIndex = [];
