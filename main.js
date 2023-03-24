@@ -1,6 +1,6 @@
 import { SZAMLISTA, SZOVEGLISTA,OBJEKTUMLIST } from "./adat.js";
-import{rendezes} from "/.rendezes.js";
-import{szuresFajtaSzerint} from "/.szures.js"
+import{rendezes} from "./rendezes";
+import{szuresFajtaSzerint} from "./szures"
 /* console.log(SZAMLISTA); */
 $(function () {
   /* let kevertIndexLista = keveres1(SZAMLISTA); */
