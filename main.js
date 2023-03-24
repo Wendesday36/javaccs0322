@@ -15,6 +15,7 @@ $(function () {
   console.log(SZAMLISTA);*/
   console.log(OBJEKTUMLIST);
   rendezesKorSzerint(OBJEKTUMLIST);
+  rendezesNevSzerint(OBJEKTUMLIST);
   console.log(OBJEKTUMLIST)
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
@@ -23,7 +24,12 @@ $(function () {
 });
 function rendezesKorSzerint(lista){
   lista.sort(function(a, b){
-    return a - b
+    return a.kor - b.kor;
+  })
+}
+function rendezesNevSzerint(lista){
+  lista.sort(function(a, b){
+    return a.nev - b.nev;
   })
 }
 function keveres1(lista) {
