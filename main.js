@@ -13,10 +13,12 @@ $(function () {
   /*console.log(SZAMLISTA);
   keveres2(SZAMLISTA);
   console.log(SZAMLISTA);*/
+  
   console.log(OBJEKTUMLIST);
-  rendezesKorSzerint(OBJEKTUMLIST);
-  rendezesNevSzerint(OBJEKTUMLIST);
-  console.log(OBJEKTUMLIST)
+  rendezes(OBJEKTUMLIST,"");
+  rendezes(OBJEKTUMLIST,"nev");
+  rendezes(OBJEKTUMLIST,"fajta");
+  console.log(OBJEKTUMLIST);
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
     console.log(SZAMLISTA[kevertIndexLista[index]])
@@ -27,10 +29,21 @@ function rendezesKorSzerint(lista){
     return a.kor - b.kor;
   })
 }
-function rendezesNevSzerint(lista){
+function rendezesNevSzerint(lista,kulcs){
   lista.sort(function(a, b){
-    return a.nev - b.nev;
+    let ertek = 1
+    if (a.[kulcs] >  b.[kulcs]) {
+      ertek = -1
+    }
+    return ertek;/**vagy pozitiv vagy negativ ertek kll ide */
   })
+}
+function rendezes(lista,kulcs){
+  if (typeof lista[0][kulcs] === "number") {
+    rendezesKorSzerint(lista,kulcs)
+  } else{
+    rendezesNevSzerint(lista,kulcs)
+  }
 }
 function keveres1(lista) {
   let van;
