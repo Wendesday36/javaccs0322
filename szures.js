@@ -1,7 +1,7 @@
 
-function szuresFajtaSzerint(lista){
+function szuresFajtaSzerint(lista,kulcs,szuresiFeltetel){
     const SZURTLISTA  =lista.flter(function(a){
-        return a["fajta"]=== "keverek"
+        return a[kulcs]=== szuresiFeltetel
     })
     return SZURTLISTA;
 }
