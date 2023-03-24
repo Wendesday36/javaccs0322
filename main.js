@@ -1,18 +1,19 @@
-import { SZAMLISTA, SZOVEGLISTA } from "./adat.js";
+import { SZAMLISTA, SZOVEGLISTA,OBJEKTUMLIST } from "./adat.js";
 
-console.log(SZAMLISTA);
+/* console.log(SZAMLISTA); */
 $(function () {
   /* let kevertIndexLista = keveres1(SZAMLISTA); */
-  console.log(SZOVEGLISTA);
+ /* console.log(SZOVEGLISTA);
   rendezes1(SZOVEGLISTA);
-  console.log(SZOVEGLISTA);
+  console.log(SZOVEGLISTA);*/
 
 
 
 
-  console.log(SZAMLISTA);
+  /*console.log(SZAMLISTA);
   keveres2(SZAMLISTA);
-  console.log(SZAMLISTA);
+  console.log(SZAMLISTA);*/
+  console.log(OBJEKTUMLIST)
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
     console.log(SZAMLISTA[kevertIndexLista[index]])
