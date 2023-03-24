@@ -1,5 +1,6 @@
 import { SZAMLISTA, SZOVEGLISTA,OBJEKTUMLIST } from "./adat.js";
-
+import{rendezes} from "/.rendezes.js";
+import{szuresFajtaSzerint} from "/.szures.js"
 /* console.log(SZAMLISTA); */
 $(function () {
   /* let kevertIndexLista = keveres1(SZAMLISTA); */
@@ -19,33 +20,15 @@ $(function () {
   rendezes(OBJEKTUMLIST,"nev");
   rendezes(OBJEKTUMLIST,"fajta");
   console.log(OBJEKTUMLIST);
+  szuresFajtaSzerint(OBJEKTUMLIST)
   /*  console.log(kevertIndexLista);
   for (let index = 0; index < SZAMLISTA.length; index++) {
     console.log(SZAMLISTA[kevertIndexLista[index]])
   } */
 });
-function rendezesKorSzerint(lista){
-  lista.sort(function(a, b){
-    return a.kor - b.kor;
-  })
-}
-function rendezesNevSzerint(lista,kulcs){
-  lista.sort(function(a, b){
-    let ertek = 1
-    if (a.[kulcs] >  b.[kulcs]) {
-      ertek = -1
-    }
-    return ertek;/**vagy pozitiv vagy negativ ertek kll ide */
-  })
-}
-function rendezes(lista,kulcs){
-  if (typeof lista[0][kulcs] === "number") {
-    rendezesKorSzerint(lista,kulcs)
-  } else{
-    rendezesNevSzerint(lista,kulcs)
-  }
-}
-function keveres1(lista) {
+
+
+/* function keveres1(lista) {
   let van;
   let megKeverIndex = [];
   let szamok;
@@ -66,11 +49,11 @@ function keveres1(lista) {
 function rendezes1(lista) {
     /**ez szovegek eseten mukodik
      */
-  lista.sort();
+  /* lista.sort();
 }
 function rendezes2(lista){
     lista.sort(function(a, b){return a - b});/**szamoknal mukodik */
-}
+/* }
 function keveres2(lista){
     lista.sort(function(a,b){return 0.5 - Math.random()})
-}
+}  */
